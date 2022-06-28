@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+body #header {
+  width: 100%;
+  height: 100%;
+}
+body #header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30px;
+  z-index: 2;
+}
+body #header .inner img {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  right: 150px;
+  bottom: 120px;
+}
+body #header .inner .menuWeb #gnb {
+  position: absolute;
+  left: 10%;
+  bottom: 65%;
+}
+body #header .inner .menuWeb #gnb li {
+  float: left;
+}
+body #header .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 0px 40px;
+  font: bold 20px/1 "apple";
+  color: #000;
+  position: relative;
+  left: 100px;
+  top: 35px;
+  overflow: hidden;
+}
+body #header .inner .menuWeb #util {
+  display: flex;
+  position: absolute;
+  left: 90%;
+  top: 15px;
+}
+body #header .inner .menuWeb #util li {
+  float: left;
+}
+body #header .inner .menuWeb #util li a {
+  position: relative;
+  padding: 8px;
+  font: 15px/1 "apple";
+  color: #000;
+}
+body #header .inner .menuMo #gnbMo {
+  width: 270px;
+  height: 100vh;
+  background: #fff;
+  padding: 35px 30px;
+  z-index: 3;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  display: none;
+}
+body #header .inner .menuMo #gnbMo.on {
+  left: 0px;
+}
+body #header .inner .btnCall {
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body #header .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+body #header .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+body #header .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  text-indent: -9999px;
+  transition: all 1s;
+}
+body #header .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+body #header .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+body #header .inner .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+body .figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body .figure .swiper {
+  width: 100%;
+  height: 100%;
+}
+body .figure .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .figure .swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .figure .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+body .figure .swiper .swiper-button-next {
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+body .figure .swiper .swiper-button-prev {
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+body .section1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body .section1 h1 {
+  padding: 50px;
+  text-align: center;
+}
+body .section1 .box1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .section1 .box1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .section1 .box1 .box1-1 {
+  width: 610px;
+  height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: rgb(228, 230, 235);
+  float: left;
+}
+body .section2 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .section2 .box2 {
+  width: 100%;
+  height: 100%;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+}
+body .section2 .box2 .box2-1 {
+  width: 100%;
+  height: 100%;
+}
+body .section2 .box2 .box2-1 img {
+  width: 100%;
+  height: 100%;
+}
+body .section2 .box2 .box2-1 .textbox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 70%;
+}
+body .section2 .box2 .box2-1 .textbox .title {
+  display: block;
+  font: bold 70px/1 "apple";
+  color: #fff;
+}
+body .section2 .box2 .box2-1 .textbox .subtitle {
+  display: block;
+  font: bold 40px/1 "apple";
+  color: #fff;
+  margin: 20px 0px;
+}
+body .section2 .box2 .box2-1 .textbox .performance {
+  display: block;
+  font: 18px/1.8 "apple";
+  color: #fff;
+  margin: 20px 0px;
+}
+body .section2 .box2 .box2-1 .textbox a {
+  color: #fff;
+  font: 20px/1.8 "apple";
+  transition: 1s;
+}
+body .section2 .box2 .box2-1 .textbox a:hover {
+  text-decoration: underline;
+}
+body .section3 {
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  background: rgb(218, 218, 218);
+}
+body .section3 .box3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .section3 .box3 .box3-1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body .section3 .box3 .box3-1 img {
+  width: 90%;
+  border: 5px solid #eee;
+  box-shadow: 5px 5px 5px #666;
+}
+body .section3 .box3 .box3-1 span {
+  display: block;
+  color: #000;
+}
+body .section3 .box3 .box3-1 .box3-title {
+  font: bold 45px/1 "apple";
+  margin-bottom: 10px;
+}
+body .section3 .box3 .box3-1 .box3-subtitle {
+  font: 25px/1 "apple";
+  margin-bottom: 50px;
+}
+body .section3 .box3 .box3-1 .box3-text1 {
+  font: bold 25px/1 "apple";
+  margin-bottom: 10px;
+}
+body .section3 .box3 .box3-1 .box3-text2 {
+  width: 85%;
+  font: 18px/1.2 "apple";
+  margin-bottom: 30px;
+}
+body .section3 .box3 .box3-1 a {
+  font: 25px/1 "apple";
+  color: #555;
+}
+body .section3 .box3 .box3-1 a:hover {
+  text-decoration: underline;
+}
+body .section4 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+body .section4 h1 {
+  padding: 50px;
+  text-align: center;
+}
+body .section4 .box4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .section4 .box4 iframe {
+  width: 100%;
+  height: 100%;
+}
+body .section4 .box4 .box4-1 {
+  width: 610px;
+  height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: rgb(228, 230, 235);
+  float: left;
+}
+body .section5 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+body .section5 h1 {
+  padding: 50px;
+  text-align: center;
+}
+body .section5 .box5 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .section5 .box5 img {
+  width: 100%;
+  height: 85%;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .section5 .box5 .box5-1 {
+  width: 360px;
+  height: 250px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  float: left;
+  text-align: center;
+  transition: 0.5s;
+}
+body .section5 .box5 .box5-1:hover {
+  transform: scale(1.1);
+}
+body .section5 .box5 a {
+  display: block;
+  width: 400px;
+  height: 60px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  color: #000;
+  font: bold 30px/1 "apple";
+  transition: 0.5s;
+}
+body .section5 .box5 a:hover {
+  background: rgb(255, 123, 51);
+  color: #fff;
+}
+body #footer {
+  width: 100%;
+  height: 30vh;
+  background: rgb(218, 218, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #footer .footer-text {
+  width: 80%;
+  height: 100%;
+}
+body #footer .footer-text .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #footer .footer-text .contact ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #footer .footer-text .contact ul li {
+  float: left;
+  margin-right: 20px;
+  font: 20px/1 "apple";
+  position: relative;
+}
+body #footer .footer-text .contact ul li a {
+  color: #000;
+}
+body #footer .footer-text .contact ul li img {
+  width: 300px;
+  height: 250px;
+}
+body #footer .footer-text .copy {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
