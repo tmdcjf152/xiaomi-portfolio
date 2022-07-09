@@ -1,0 +1,79 @@
+// settiong
+@import '../setting/color';
+@import '../setting/font';
+
+.content {
+	width: 100%;
+	height: 100%;
+	.inner {
+		width: 1180px;
+		height: 100%;
+		.logobox {
+			width: 100%;
+			height: 200px;
+			margin-bottom: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: nowrap;
+			.logoimg {
+				width: 980px;
+			}
+			.logotext {
+				width: 980px;
+				display: flex;
+				align-items: center;
+				font: 20px/1.2 $h;
+				color: #555;
+				.textbold {
+					font: 30px/1.5 $h;
+				}
+			}
+		}
+		.department {
+            width: 100%;
+			.member {
+				width: 100%;
+                height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				flex-wrap: wrap;
+                margin-bottom: 100px;
+				.pic {
+					width: 30%;
+					height: 100%;
+                    margin: 0 auto;
+                    img{
+                        box-shadow: 10px 10px 1px 1px rgb(255, 125, 4);
+                    }
+				}
+				.profile {
+					width: 60%;
+					height: 100%;
+					span {
+						display: block;
+					}
+					.name {
+						font: 35px/1 $h;
+                        color: #fff;
+						background: rgb(255, 125, 4);
+						margin-top: 20px;
+						margin-bottom: 20px;
+                        padding:3px 10px;
+                        
+					}
+					.position {
+						font: 25px/1 $h;
+                        color: #555;
+						margin-bottom: 30px;
+					}
+                    .jobtext{
+                        font: 18px/1 $h;
+                        color: #555;
+                    }
+				}
+			}
+		}
+	}
+}

@@ -18,6 +18,92 @@ a {
   opacity: 0;
 }
 
+.content {
+  width: 100%;
+  height: 100%;
+}
+.content .inner {
+  width: 1180px;
+  height: 100%;
+}
+.content .inner .logobox {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.content .inner .logobox .logoimg {
+  width: 980px;
+}
+.content .inner .logobox .logotext {
+  width: 980px;
+  display: flex;
+  align-items: center;
+  font: 20px/1.2 "apple";
+  color: #555;
+}
+.content .inner .logobox .logotext .textbold {
+  font: 30px/1.5 "apple";
+}
+.content .inner .department {
+  width: 100%;
+}
+.content .inner .department .member {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.content .inner .department .member .pic {
+  width: 30%;
+  height: 100%;
+  margin: 0 auto;
+}
+.content .inner .department .member .pic img {
+  box-shadow: 10px 10px 1px 1px rgb(255, 125, 4);
+}
+.content .inner .department .member .profile {
+  width: 60%;
+  height: 100%;
+}
+.content .inner .department .member .profile span {
+  display: block;
+}
+.content .inner .department .member .profile .name {
+  font: 35px/1 "apple";
+  color: #fff;
+  background: rgb(255, 125, 4);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+}
+.content .inner .department .member .profile .position {
+  font: 25px/1 "apple";
+  color: #555;
+  margin-bottom: 30px;
+}
+.content .inner .department .member .profile .jobtext {
+  font: 18px/1 "apple";
+  color: #555;
+}
+
+.content {
+  width: 100%;
+  margin: 100px 0px;
+}
+.content .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
 body #header {
   width: 100%;
   height: 100%;
@@ -405,7 +491,7 @@ body .section5 .box5 a:hover {
 }
 body #footer {
   width: 100%;
-  height: 30vh;
+  height: 100%;
   background: rgb(218, 218, 218);
   display: flex;
   justify-content: center;
